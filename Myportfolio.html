@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiew Portfolio</title>
+    <link rel="stylesheet" href="Myportfolio.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a onclick="showSection('hero')">Home</a></li>
+            <li><a onclick="showSection('about')">About</a></li>
+            <li><a onclick="showSection('skills')">Skills</a></li>
+            <li><a onclick="showSection('cp')">CP</a></li>
+            <li><a onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="hero">
+        <h1>
+            Hi, I'm <span>Rafiew Bin Ashraf</span>
+        </h1>
+        <p>
+            I am a Computer Science and Engineering (CSE) student passionate
+            about web development, competitive programming, and building
+            modern software that solves real-world problems.
+        </p>
+        <div class="buttons">
+            <a href="#" class="btn btn1">View Projects</a>
+            <a href="#" class="btn btn2">Download Resume</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm Rafiew Bin Ashraf,a Computer Science and Engineering (CSE)
+            student passionate about web development, software engineering, and
+            competitive programming. I enjoy creating modern, responsive websites and
+            continuously expanding my frontend development skills using HTML and CSS.
+            Outside of web development, I regularly practice competitive programming to
+            sharpen my problem-solving and algorithmic thinking. My long-term goal is
+            to become a Full Stack Developer by mastering frontend technologies,
+            backend development, databases, and cloud technologies, enabling me to
+            build high-performance, scalable, and user-centric applications.
+        </p>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Programming Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">C</div>
+            <div class="skill-card">C++</div>
+            <div class="skill-card">OOP</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">Git</div>
+        </div>
+    </section>
+
+    <section class="cp" id="cp">
+        <h2>Competitive Programming</h2>
+        <p>
+            Actively involved in competitive programming with HNU ICPC,
+            solving algorithmic problems and building strong fundamentals
+            in data structures and algorithms.
+        </p>
+        <div class="cp-stats">
+            <div class="stat">
+                <h3><a href="https://codeforces.com/profile/IGuess" target="_blank"
+                        style="color: #38BDF8; text-decoration: underline; cursor: pointer;">IGuess</a></h3>
+                <p>Codeforces Handle</p>
+            </div>
+            <div class="stat">
+                <h3>1085</h3>
+                <p>Max Rating</p>
+            </div>
+            <div class="stat">
+                <h3>500+</h3>
+                <p>Problems Solved</p>
+            </div>
+            <div class="stat">
+                <h3>60+</h3>
+                <p>Contests</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>
+        Feel free to reach out — I'm always open to connecting,
+        collaborating, or just talking about code.
+    </p>
+    <div class="contact-links">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rafiewbinashraf44@gmail.com" target="_blank">Email</a>
+        <a href="https://github.com/Rafiew" target="_blank">GitHub</a>
+        <a href="https://codeforces.com/profile/IGuess" target="_blank">Codeforces</a>
+    </div>
+</section>
+    <script>
+        function showSection(id) {
+            const sections = ['hero', 'about', 'skills', 'cp','contact'];
+            sections.forEach(sec => {
+                if (sec === id) {
+                    document.getElementById(sec).style.display = (sec === 'hero') ? 'flex' : 'block';
+                } else {
+                    document.getElementById(sec).style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
